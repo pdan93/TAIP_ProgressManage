@@ -1,13 +1,11 @@
 # TAIP_ProgressManage
 Faculty project similar to JIRA or TFS that tries to add ingeneering programming principles
 
-
 Disciplina: Tehnologii avansate de ingineria programării (TAIP)
-
 Coordinator: dr. Sabin Buraga, dr. Ferucio Laurentiu TIPLEA  
   
-Membrii echipei:
-Alexandru Rusu[MSI]
+Members :
+Alexandru Rusu[MSI] - alexandrurusu93@yahoo.com
 Daniel Popescu[MISS]
 Daniel Unguru[MOC]  - robert.unguru@gmail.com
 Claudiu Unguru[MOC] - claudiu_unguru@yahoo.com
@@ -18,11 +16,8 @@ Soluțiile existente pentru manageriatul sarcinilor de lucru precum TFS sau Jira
 
 
 ## State of the art:
-
 https://docs.google.com/document/d/1JxpyzskYu9dUD7hxpzA1XISYY8BlGgAAdxWQWBQnDD4/edit?usp=sharing
----
 
 ## Software Requirements Specification:
 https://docs.google.com/document/d/1vxTwekmnPpj07QrqWShDymLm42mIZ2nXrBej_GgGgtM/edit?usp=sharing
 
----
