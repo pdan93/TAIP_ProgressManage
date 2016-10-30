@@ -1,3 +1,6 @@
+
+https://docs.google.com/document/d/1vxTwekmnPpj07QrqWShDymLm42mIZ2nXrBej_GgGgtM/edit?usp=sharing
+
 Use-case Diagram - Rusu Alexandru
 Class Diagram - Unguru Robert Daniel
 Sequence Diagrams - Popescu Daniel
