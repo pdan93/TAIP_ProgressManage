@@ -4,11 +4,15 @@ Faculty project similar to JIRA or TFS that tries to add ingeneering programming
 
 Disciplina: Tehnologii avansate de ingineria programării (TAIP)
 
+Coordinator:
+	dr. Sabin Buraga
+  dr. Ferucio Laurentiu TIPLEA  
+  
 Membrii echipei:
 Alexandru Rusu[MSI]
 Daniel Popescu[MISS]
-Daniel Unguru[MOC]
-Claudiu Unguru[MOC]
+Daniel Unguru[MOC]  - robert.unguru@gmail.com
+Claudiu Unguru[MOC] - claudiu_unguru@yahoo.com
 
 Ideea proiectului:
 Proiectul dorește să ofere un mod centralizat de vizualizare și comparare a progresului echipelor în cadrul unei companii IT ținând cont de metodologia de lucru (kanban, waterfall, etc), uneltele folosite și numărul de membrii, capacitatea acestora fiind măsurată în numărul de ore. 
