@@ -18,3 +18,6 @@ Soluțiile existente pentru manageriatul sarcinilor de lucru precum TFS sau Jira
 
 State of the art: 
 https://docs.google.com/document/d/1JxpyzskYu9dUD7hxpzA1XISYY8BlGgAAdxWQWBQnDD4/edit?usp=sharing
+
+Software Requirements Specification
+https://docs.google.com/document/d/1vxTwekmnPpj07QrqWShDymLm42mIZ2nXrBej_GgGgtM/edit?usp=sharing
