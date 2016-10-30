@@ -4,9 +4,7 @@ Faculty project similar to JIRA or TFS that tries to add ingeneering programming
 
 Disciplina: Tehnologii avansate de ingineria programării (TAIP)
 
-Coordinator:
-	dr. Sabin Buraga
-  dr. Ferucio Laurentiu TIPLEA  
+Coordinator: dr. Sabin Buraga, dr. Ferucio Laurentiu TIPLEA  
   
 Membrii echipei:
 Alexandru Rusu[MSI]
