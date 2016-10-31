@@ -6,7 +6,7 @@ Coordinator: dr. Sabin Buraga, dr. Ferucio Laurentiu TIPLEA
   
 Members :
 Alexandru Rusu[MSI] - alexandrurusu93@yahoo.com
-Daniel Popescu[MISS]
+Daniel Popescu[MISS] - danielpopescu93@gmail.com
 Daniel Unguru[MOC]  - robert.unguru@gmail.com
 Claudiu Unguru[MOC] - claudiu_unguru@yahoo.com
 
