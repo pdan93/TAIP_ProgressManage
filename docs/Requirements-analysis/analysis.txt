@@ -5,7 +5,7 @@ Use-case Diagram - Rusu Alexandru
 Class Diagram - Unguru Robert Daniel
 Sequence Diagrams - Popescu Daniel
 Statechart Diagram - Rusu Alexandru
-Communication Diagram - Unguru Robert Daniel
+Collaboration Diagram - Unguru Robert Daniel
 Activity Diagram - Popescu Daniel
 Deployment Diagram  - Unguru Claudiu George
 Package Diagram - Unguru Claudiu George
