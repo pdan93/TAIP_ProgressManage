@@ -2,7 +2,7 @@ State -> PetriNets
 Composite -> Story
 Singleton -> PetriNetsEvaluator
 Factory Method -> Task, Defect
-Adapter -> PetriNetwork 
+Prototype -> Sprint
 Facade -> PetriNetsFacade
 Strategy -> PetriNets
 Observer -> Sprint
