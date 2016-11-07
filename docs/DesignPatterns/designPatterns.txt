@@ -1,0 +1,8 @@
+State -> PetriNets 
+Composite -> Story
+Singleton -> PetriNetsEvaluator
+Factory Method -> Task, Defect
+Adapter -> PetriNetwork 
+Facade -> PetriNetsFacade
+Strategy -> PetriNets
+Observer -> Sprint
