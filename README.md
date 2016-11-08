@@ -21,3 +21,5 @@ https://docs.google.com/document/d/1JxpyzskYu9dUD7hxpzA1XISYY8BlGgAAdxWQWBQnDD4/
 ## Software Requirements Specification:
 https://docs.google.com/document/d/1vxTwekmnPpj07QrqWShDymLm42mIZ2nXrBej_GgGgtM/edit?usp=sharing
 
+## Dessign Patterns:
+https://github.com/pdan93/TAIP_ProgressManage/raw/master/design_patterns.txt
