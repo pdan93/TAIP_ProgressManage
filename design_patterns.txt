@@ -1,0 +1,8 @@
+Factory Method - ProgressManage/SprintEntities/StoryFactory.cs Daniel Unguru
+Singleton - ProgressManage/PetriNets/PetriNetsEvaluator.cs Daniel Unguru
+Composite - ProgressManage/Workflow/ Sprint.cs/Story.cs Claudiu Unguru
+Facade - ProgressManage/PetriNets/PetriNetsFacade.cs Claudiu Unguru
+Observer - ProgressManage/PetriNets/Observer/ Alexandru Rusu
+Strategy - ProgressManage/PetriNets/Strategies/ Alexandru Rusu
+State - ProgressManage/PetriNets/State.cs Daniel Popescu
+Prototype - ProgressManage/Workflow/SprintPrototype.cs Daniel Popescu
