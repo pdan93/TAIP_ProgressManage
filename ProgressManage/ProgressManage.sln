@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetriNets", "PetriNets\Petr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow", "Workflow\Workflow.csproj", "{7F0F0B58-A7D6-4C2A-AF20-FE1F4C7236BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetriNets.Tests", "PetriNets.Tests\PetriNets.Tests.csproj", "{7BD1D1C0-54E0-4712-B92A-B3D6EAD7917A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests.Unit", "Tests.Unit", "{ADEB1ACA-D8F2-4266-B08B-4AA36EBD623C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,8 +37,16 @@ Global
 		{7F0F0B58-A7D6-4C2A-AF20-FE1F4C7236BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F0F0B58-A7D6-4C2A-AF20-FE1F4C7236BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F0F0B58-A7D6-4C2A-AF20-FE1F4C7236BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD1D1C0-54E0-4712-B92A-B3D6EAD7917A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD1D1C0-54E0-4712-B92A-B3D6EAD7917A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD1D1C0-54E0-4712-B92A-B3D6EAD7917A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD1D1C0-54E0-4712-B92A-B3D6EAD7917A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A1CB126-6171-4B6F-B92A-19737792BE06} = {ADEB1ACA-D8F2-4266-B08B-4AA36EBD623C}
+		{7BD1D1C0-54E0-4712-B92A-B3D6EAD7917A} = {ADEB1ACA-D8F2-4266-B08B-4AA36EBD623C}
 	EndGlobalSection
 EndGlobal

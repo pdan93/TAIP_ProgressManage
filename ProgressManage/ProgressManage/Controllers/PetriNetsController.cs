@@ -3,13 +3,16 @@ using System.Web.Http;
 
 namespace ProgressManage.Controllers
 {
-    public class PetriNetsController
+    public class PetriNetsController : ApiController
     {
         [HttpGet]
-        public IEnumerable<object> Get()
+        [LoggingAspect]
+        public IEnumerable<string> Get()
         {
-            //PetriNetsValidator.GetWarnings();
-            return new List<object>();
+            return new List<string>()
+            {
+                "Nets"
+            };
         }
     }
 }

@@ -1,0 +1,14 @@
+DEBUG 2016-11-13 12:56:02,918  3424ms PetriNetsController    Get                - OnEntry
+DEBUG 2016-11-13 13:10:28,749 10980ms LoggingAspect          OnEntry            - OnEntry
+DEBUG 2016-11-13 13:10:28,749 10980ms LoggingAspect          OnEntry            - OnEntry
+DEBUG 2016-11-13 13:10:28,776 11007ms PetriNetsController    Get                - OnEntry
+DEBUG 2016-11-13 13:10:28,775 11007ms PetriNetsController    Get                - OnEntry
+DEBUG 2016-11-13 13:10:29,426 11658ms LoggingAspect          OnExit             - OnExit
+DEBUG 2016-11-13 13:10:30,185 12416ms LoggingAspect          OnExit             - OnExit
+DEBUG 2016-11-13 13:13:39,069  4637ms LoggingAspect          OnEntry            - Get was called
+DEBUG 2016-11-13 13:13:39,088  4656ms PetriNetsController    Get                - OnEntry
+DEBUG 2016-11-13 13:13:39,088  4656ms LoggingAspect          OnExit             - Get was finished
+DEBUG 2016-11-13 13:16:16,490   366ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-11-13 13:16:16,510   386ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-11-13 13:16:42,171 26047ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-11-13 13:16:42,172 26048ms LoggingAspect          OnExit             - Get execution has ended
