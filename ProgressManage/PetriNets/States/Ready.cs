@@ -8,6 +8,11 @@ namespace PetriNets
 {
     public class Ready : State
     {
+        public Ready()
+        {
+            Name = "Ready";
+        }
+
         public override void Handle(SprintEntity sprintEntity)
         {
             sprintEntity.State = new Ready();

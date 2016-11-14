@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace PetriNets
 {
     public class PetriNetwork
     {
-        private IEnumerable<State> States;
+        public List<SprintEntity> Entities = new List<SprintEntity>();
 
         public void InsertSprintEntity(SprintEntity entity)
         {

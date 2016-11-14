@@ -1,4 +1,5 @@
 ﻿using PetriNets;
+using PetriNets.States;
 
 namespace Workflow
 {
@@ -11,6 +12,18 @@ namespace Workflow
         public SprintEntity CreateSprintEntity(State state)
         {
             return new Task(state);
+        }
+
+        public override void Close()
+        {
+            if (State.GetType() != typeof(Tested)) return;
+            State = new Done();
+        }
+
+        public override void MoveTo(State nextState)
+        {
+            if (State.GetType() == typeof(New) && nextState.GetType() == typeof(InProgress)) return;
+            State = nextState;
         }
     }
 }

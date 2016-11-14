@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetriNets
+namespace PetriNets.States
 {
-    public class InProgress : State
+    public class Fixed : State
     {
-        public InProgress()
+        public Fixed()
         {
-            Name = "InProgress";
+            Name = "Fixed";
         }
 
         public override void Handle(SprintEntity sprintEntity)
         {
-            sprintEntity.State = new InProgress();
+            sprintEntity.State = new Done();
         }
     }
 }

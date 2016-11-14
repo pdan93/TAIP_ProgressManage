@@ -12,3 +12,7 @@ DEBUG 2016-11-13 13:16:16,490   366ms LoggingAspect          OnEntry            
 DEBUG 2016-11-13 13:16:16,510   386ms LoggingAspect          OnExit             - Get execution has ended
 DEBUG 2016-11-13 13:16:42,171 26047ms LoggingAspect          OnEntry            - Get call started
 DEBUG 2016-11-13 13:16:42,172 26048ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-11-14 22:07:15,672   700ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-11-14 22:07:15,729   757ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-11-14 22:07:26,337 11365ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-11-14 22:07:26,339 11366ms LoggingAspect          OnExit             - Get execution has ended
