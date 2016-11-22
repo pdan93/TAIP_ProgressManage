@@ -49,5 +49,10 @@ namespace PetriNets.Tests
             //Assert
             defect.State.ShouldBeOfType(typeof(New));
         }
+        
+
+        //test for not accessign withouth netsFacade
+        //test for network to have all added entities
+        //test for evaluator to return correct
     }
 }
