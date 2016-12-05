@@ -23,3 +23,6 @@ https://docs.google.com/document/d/1vxTwekmnPpj07QrqWShDymLm42mIZ2nXrBej_GgGgtM/
 
 ## Dessign Patterns:
 https://github.com/pdan93/TAIP_ProgressManage/raw/master/design_patterns.txt
+
+## BPMN:
+https://raw.githubusercontent.com/pdan93/TAIP_ProgressManage/master/docs/BPMN.png
