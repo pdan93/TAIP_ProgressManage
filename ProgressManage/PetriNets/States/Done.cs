@@ -8,7 +8,7 @@ namespace PetriNets
             Name = "Done";
         }
 
-        public override void Handle(SprintEntity sprintEntity)
+        public void Handle(SprintEntity sprintEntity)
         {
             sprintEntity.State = new Done();
         }

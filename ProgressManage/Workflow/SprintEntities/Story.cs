@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using PetriNets;
-using Workflow.SprintEntities;
 
-namespace Workflow
+namespace Workflow.SprintEntities
 {
     public class Story : SprintEntity, ISprintEntityFactory
     {

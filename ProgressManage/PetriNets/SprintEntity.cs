@@ -4,17 +4,15 @@ namespace PetriNets
 {
     public class SprintEntity : ObserverSubject
     {
+        public bool Implemented { get; set; }
+        public bool? Tested { get; set; }
+
         public SprintEntity(State state)
         {
             State = state;
         }
 
         public State State { get; set; }
-
-        public void Request()
-        {
-            State.Handle(this);
-        }
 
         public virtual void Close() {}
 

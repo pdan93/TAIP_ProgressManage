@@ -16,3 +16,47 @@ DEBUG 2016-11-14 22:07:15,672   700ms LoggingAspect          OnEntry            
 DEBUG 2016-11-14 22:07:15,729   757ms LoggingAspect          OnExit             - Get execution has ended
 DEBUG 2016-11-14 22:07:26,337 11365ms LoggingAspect          OnEntry            - Get call started
 DEBUG 2016-11-14 22:07:26,339 11366ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-11-15 09:15:56,726  1114ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-11-15 09:15:57,274  1661ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-11-27 20:56:50,151 35362ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-11-27 20:56:50,474 35685ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-11-27 21:04:28,201   886ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-11-27 21:04:28,379  1064ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-12-01 13:43:50,713  1265ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-01 13:44:20,124 30675ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-12-01 13:45:29,018 11278ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-01 13:46:53,967  5228ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-01 13:49:35,745  3144ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-01 13:50:10,230  4466ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-01 13:53:48,470 20987ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-01 14:12:16,017   825ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-01 14:15:37,667  3326ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-01 14:16:08,674   473ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-01 14:16:34,841 26639ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-01 14:19:18,272   650ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-02 12:07:52,589 23056ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-02 12:18:08,156  5006ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-02 12:18:53,188   774ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-02 12:18:59,081  6666ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-02 12:20:24,748  6415ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-03 11:28:58,520 37823ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-03 11:29:39,778 79082ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-12-03 11:29:44,871 84174ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-03 11:34:29,094  2924ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-03 11:43:43,991 12352ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-03 11:46:34,815 17581ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-03 11:48:21,752  1818ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-04 11:34:31,368 114233ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-04 11:36:15,666 218531ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-12-04 11:40:12,161  5757ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-04 11:40:31,856 25453ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-12-04 11:43:52,599 57387ms LoggingAspect          OnEntry            - Get call started
+DEBUG 2016-12-04 11:45:24,479 149267ms LoggingAspect          OnExit             - Get execution has ended
+DEBUG 2016-12-05 20:20:42,119 29073ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-05 20:20:42,331 29285ms LoggingAspect          OnExit             - After method: Get was executed in 0 seconds
+DEBUG 2016-12-05 20:24:00,387 50946ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-05 20:24:00,418 50977ms LoggingAspect          OnExit             - After method: Get was executed in 0 seconds
+DEBUG 2016-12-05 20:24:04,665 55224ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-05 20:24:04,665 55224ms LoggingAspect          OnExit             - After method: Get was executed in 0 seconds
+DEBUG 2016-12-05 20:25:37,975  4748ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-05 20:25:38,020  4793ms LoggingAspect          OnExit             - After method: Get was executed in 7 miliseconds

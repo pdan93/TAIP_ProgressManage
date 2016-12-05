@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Web.Http;
+﻿using System.Web.Http;
+using PetriNets;
+using Workflow;
+using Workflow.SprintEntities;
 
 namespace ProgressManage.Controllers
 {
@@ -7,12 +9,26 @@ namespace ProgressManage.Controllers
     {
         [HttpGet]
         [LoggingAspect]
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new List<string>()
+            var task = new Task(new State(StatesDictionary.Start));
+
+            Sprint sprint = new Sprint();
+            sprint.CreateNetwork(task);
+
+            if (sprint.IsHistoryValid(task))
             {
-                "Nets"
-            };
+                return "History of task passed the test";
+            }
+
+            return "History of task not passed the test";
+        }
+
+        [HttpPost]
+        [LoggingAspect]
+        public string Post([FromBody] string text)
+        {
+            return text;
         }
     }
 }

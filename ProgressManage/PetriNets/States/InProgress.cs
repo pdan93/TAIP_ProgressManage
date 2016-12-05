@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PetriNets
+﻿namespace PetriNets.States
 {
     public class InProgress : State
     {
@@ -13,7 +7,7 @@ namespace PetriNets
             Name = "InProgress";
         }
 
-        public override void Handle(SprintEntity sprintEntity)
+        public void Handle(SprintEntity sprintEntity)
         {
             sprintEntity.State = new InProgress();
         }

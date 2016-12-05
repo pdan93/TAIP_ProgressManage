@@ -7,7 +7,7 @@
             Name = "Implemented";
         }
 
-        public override void Handle(SprintEntity sprintEntity)
+        public void Handle(SprintEntity sprintEntity)
         {
             sprintEntity.State = new Implemented();
         }

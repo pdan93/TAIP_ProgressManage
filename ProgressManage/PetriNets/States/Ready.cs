@@ -13,7 +13,7 @@ namespace PetriNets
             Name = "Ready";
         }
 
-        public override void Handle(SprintEntity sprintEntity)
+        public void Handle(SprintEntity sprintEntity)
         {
             sprintEntity.State = new Ready();
         }

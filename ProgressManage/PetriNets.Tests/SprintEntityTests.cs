@@ -2,7 +2,7 @@
 using PetriNets.States;
 using Shouldly;
 using Workflow.SprintEntities;
-using Task = Workflow.Task;
+using Task = Workflow.SprintEntities.Task;
 
 namespace PetriNets.Tests
 {

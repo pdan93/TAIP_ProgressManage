@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Formatting;
+﻿using System.Net.Http.Formatting;
 using System.Web.Http;
 
 namespace ProgressManage
@@ -11,8 +8,8 @@ namespace ProgressManage
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            config.Formatters.Remove(config.Formatters.XmlFormatter);
             config.Formatters.Add(new JsonMediaTypeFormatter());
+            config.Formatters.Add(new XmlMediaTypeFormatter());
 
             // Web API routes
             config.MapHttpAttributeRoutes();

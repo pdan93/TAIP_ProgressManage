@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using PetriNets.Strategies;
+﻿using PetriNets.Strategies;
 
 namespace PetriNets
 {
@@ -19,11 +18,6 @@ namespace PetriNets
         public void InsertSprintEntity(SprintEntity entity)
         {
             _petriNetwork.InsertSprintEntity(entity);
-        }
-
-        public void Evaluate(IEnumerable<SprintEntity> states)
-        {
-            _petriNetsEvaluator.EvaluateStates(states);
         }
 
         public void Run(SprintEntity token)

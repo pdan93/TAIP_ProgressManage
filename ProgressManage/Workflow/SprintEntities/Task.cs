@@ -1,10 +1,14 @@
 ﻿using PetriNets;
 using PetriNets.States;
 
-namespace Workflow
+namespace Workflow.SprintEntities
 {
     public class Task : SprintEntity, ISprintEntityFactory
     {
+        public bool? Approved { get; set; }
+        public float Estimation { get; set; }
+        public string ResolvedState { get; set; }
+
         public Task(State state) : base(state)
         {
         }

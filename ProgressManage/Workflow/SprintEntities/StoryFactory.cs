@@ -1,6 +1,6 @@
 ﻿using PetriNets;
 
-namespace Workflow
+namespace Workflow.SprintEntities
 {
     interface ISprintEntityFactory
     {
