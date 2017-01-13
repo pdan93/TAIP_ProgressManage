@@ -5,7 +5,7 @@ namespace PetriNets
     public class SprintEntity : ObserverSubject
     {
         public bool Implemented { get; set; }
-        public bool? Tested { get; set; }
+        public bool Tested { get; set; }
 
         public SprintEntity(State state)
         {
