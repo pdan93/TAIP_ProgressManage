@@ -6,8 +6,10 @@ namespace Workflow.SprintEntities
     public class Task : SprintEntity, ISprintEntityFactory
     {
         public bool? Approved { get; set; }
-        public float Estimation { get; set; }
+        public float RemainingWork { get; set; }
         public string ResolvedState { get; set; }
+        public string Reason { get; set; }
+        public string WorkItemType { get; set; }
 
         public Task(State state) : base(state)
         {

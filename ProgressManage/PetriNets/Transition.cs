@@ -6,7 +6,7 @@ namespace PetriNets
     {
         public SprintEntity Entity { get; }
         public Func<SprintEntity, bool> Precondtion { get; }
-        public State NextState { get;  }
+        public State NextState { get; }
 
         public Transition(SprintEntity entity, Func<SprintEntity, bool> precondtion, State nextState)
         {

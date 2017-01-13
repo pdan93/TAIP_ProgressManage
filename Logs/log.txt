@@ -1,4 +1,5 @@
-DEBUG 2016-11-13 12:56:02,918  3424ms PetriNetsController    Get                - OnEntry
+DEBUG 
+312:56:02,918  3424ms PetriNetsController    Get                - OnEntry
 DEBUG 2016-11-13 13:10:28,749 10980ms LoggingAspect          OnEntry            - OnEntry
 DEBUG 2016-11-13 13:10:28,749 10980ms LoggingAspect          OnEntry            - OnEntry
 DEBUG 2016-11-13 13:10:28,776 11007ms PetriNetsController    Get                - OnEntry
@@ -60,3 +61,266 @@ DEBUG 2016-12-05 20:24:04,665 55224ms LoggingAspect          OnEntry            
 DEBUG 2016-12-05 20:24:04,665 55224ms LoggingAspect          OnExit             - After method: Get was executed in 0 seconds
 DEBUG 2016-12-05 20:25:37,975  4748ms LoggingAspect          OnEntry            - Before method: Get execution
 DEBUG 2016-12-05 20:25:38,020  4793ms LoggingAspect          OnExit             - After method: Get was executed in 7 miliseconds
+DEBUG 2016-12-06 08:43:26,785  1396ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-06 08:43:27,078  1688ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-06 08:43:27,079  1689ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 2 miliseconds
+DEBUG 2016-12-06 08:43:27,080  1690ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-06 08:43:27,101  1711ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 20 miliseconds
+DEBUG 2016-12-06 08:43:27,102  1712ms LoggingAspect          OnExit             - After method: Get was executed in 29 miliseconds
+DEBUG 2016-12-18 20:32:50,010  6663ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:32:57,004 13656ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-18 20:34:01,948  3716ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:34:08,648 10416ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-18 20:36:20,933  5256ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:36:31,576 15899ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-18 20:36:41,139 25462ms LoggingAspect          OnExit             - After method: Get was executed in 20081 miliseconds
+DEBUG 2016-12-18 20:37:29,245 20748ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:38:51,450   337ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:41:40,463   421ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:42:45,289 12979ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:48:46,395  1934ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:48:47,056  2595ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-18 20:48:47,057  2596ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-18 20:48:47,058  2597ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-18 20:48:47,075  2615ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 17 miliseconds
+DEBUG 2016-12-18 20:48:47,076  2615ms LoggingAspect          OnExit             - After method: Get was executed in 321 miliseconds
+DEBUG 2016-12-18 20:49:14,798 30337ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:49:30,616 46155ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-18 20:49:30,617 46156ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-18 20:49:30,618 46157ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-18 20:49:30,618 46157ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 0 miliseconds
+DEBUG 2016-12-18 20:49:30,618 46157ms LoggingAspect          OnExit             - After method: Get was executed in 15820 miliseconds
+DEBUG 2016-12-18 20:49:37,908 53447ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:50:17,983 93522ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-18 20:50:17,984 93523ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-18 20:50:17,985 93524ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-18 20:50:17,985 93524ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 0 miliseconds
+DEBUG 2016-12-18 20:50:17,985 93524ms LoggingAspect          OnExit             - After method: Get was executed in 40076 miliseconds
+DEBUG 2016-12-18 20:51:31,684 167223ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:52:12,653 208192ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-18 20:52:12,654 208193ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-18 20:52:12,654 208193ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-18 20:52:12,655 208194ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 0 miliseconds
+DEBUG 2016-12-18 20:52:12,655 208194ms LoggingAspect          OnExit             - After method: Get was executed in 40969 miliseconds
+DEBUG 2016-12-18 20:53:51,368 306907ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:54:05,422 320961ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-18 20:54:05,423 320962ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-18 20:54:05,423 320962ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-18 20:54:05,425 320964ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 0 miliseconds
+DEBUG 2016-12-18 20:54:05,425 320964ms LoggingAspect          OnExit             - After method: Get was executed in 14051 miliseconds
+DEBUG 2016-12-18 20:58:52,578 608117ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-18 20:59:10,548 626087ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-18 20:59:10,549 626088ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-18 20:59:10,549 626088ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-18 20:59:10,550 626089ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 0 miliseconds
+DEBUG 2016-12-18 20:59:10,550 626089ms LoggingAspect          OnExit             - After method: Get was executed in 17951 miliseconds
+DEBUG 2016-12-18 21:50:22,133  1814ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 21:54:20,931  1669ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 22:56:11,007 19925ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:17:12,219 181443ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:21:23,430  6644ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:21:48,036 31250ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:21:48,039 31253ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 1 miliseconds
+DEBUG 2016-12-19 23:21:49,227 32441ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:21:52,971 36185ms LoggingAspect          OnException        - Method: IsHistoryValid throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-19 23:21:52,993 36207ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 3765 miliseconds
+DEBUG 2016-12-19 23:21:52,998 36212ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-19 23:21:55,160 38374ms LoggingAspect          OnExit             - After method: Get was executed in 31624 miliseconds
+DEBUG 2016-12-19 23:22:11,017  3815ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:22:15,231  8029ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:22:15,232  8030ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:22:16,206  9004ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:23:36,487 10664ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:23:42,743 16920ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:23:42,744 16921ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:23:43,675 17853ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:23:57,370 31547ms LoggingAspect          OnException        - Method: IsHistoryValid throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-19 23:23:57,380 31557ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 13704 miliseconds
+DEBUG 2016-12-19 23:23:57,386 31563ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-19 23:30:45,937 17445ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:31:02,498 34006ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:31:02,499 34007ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:31:04,036 35543ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:31:12,214 43721ms LoggingAspect          OnException        - Method: IsHistoryValid throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-19 23:31:12,223 43730ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 8186 miliseconds
+DEBUG 2016-12-19 23:31:12,229 43736ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-19 23:35:40,983  1732ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:36:21,937 42685ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:36:21,938 42686ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:36:23,013 43761ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:36:29,479 50228ms LoggingAspect          OnException        - Method: IsHistoryValid throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-19 23:36:29,488 50237ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 6474 miliseconds
+DEBUG 2016-12-19 23:36:29,494 50243ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-19 23:37:43,002 13895ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:37:48,172 19065ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:37:48,173 19066ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:37:49,128 20021ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:38:26,789 57682ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 37659 miliseconds
+DEBUG 2016-12-19 23:38:26,791 57684ms LoggingAspect          OnExit             - After method: Get was executed in 43616 miliseconds
+DEBUG 2016-12-19 23:41:32,511  4445ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:41:32,741  4675ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:41:32,742  4676ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:41:32,744  4677ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:41:32,746  4680ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 1 miliseconds
+DEBUG 2016-12-19 23:41:32,746  4680ms LoggingAspect          OnExit             - After method: Get was executed in 161 miliseconds
+DEBUG 2016-12-19 23:44:10,349 68830ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:44:11,487 69968ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:44:11,496 69977ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:44:11,497 69978ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:44:11,513 69994ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 14 miliseconds
+DEBUG 2016-12-19 23:44:11,513 69994ms LoggingAspect          OnExit             - After method: Get was executed in 702 miliseconds
+DEBUG 2016-12-19 23:44:21,555 80036ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:44:21,556 80037ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:44:21,557 80038ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:44:25,965 84446ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:46:24,380 202861ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 118415 miliseconds
+DEBUG 2016-12-19 23:46:24,381 202862ms LoggingAspect          OnExit             - After method: Get was executed in 122825 miliseconds
+DEBUG 2016-12-19 23:46:32,827 211309ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:46:32,828 211310ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:46:32,828 211310ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:46:36,614 215095ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:51:33,779 96006ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:51:34,129 96356ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:51:34,129 96357ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:51:39,906 102133ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:54:42,900  5310ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:54:43,116  5527ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:54:43,117  5528ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:54:47,936 10347ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:57:48,070 190480ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:57:48,077 190488ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:57:48,099 190509ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:57:49,842 192252ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:59:07,345 269756ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-19 23:59:07,413 269824ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-19 23:59:07,417 269828ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-19 23:59:08,288 270699ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-19 23:59:18,553 280964ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 269441 miliseconds
+DEBUG 2016-12-19 23:59:24,201 286612ms LoggingAspect          OnExit             - After method: Get was executed in 281286 miliseconds
+DEBUG 2016-12-19 23:59:24,200 286611ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 14179 miliseconds
+DEBUG 2016-12-19 23:59:24,201 286612ms LoggingAspect          OnExit             - After method: Get was executed in 16833 miliseconds
+DEBUG 2016-12-19 23:59:24,200 286611ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 92470 miliseconds
+DEBUG 2016-12-19 23:59:24,202 286613ms LoggingAspect          OnExit             - After method: Get was executed in 96131 miliseconds
+DEBUG 2016-12-20 00:01:20,592 403003ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:01:20,593 403004ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:01:20,594 403005ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:01:23,317 405728ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:04:46,626   381ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:04:46,796   551ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:04:46,805   559ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:04:59,471 13225ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:05:27,662 41417ms LoggingAspect          OnException        - Method: IsHistoryValid throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-20 00:05:27,679 41434ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 28207 miliseconds
+DEBUG 2016-12-20 00:05:27,685 41440ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-20 00:05:28,835 42590ms LoggingAspect          OnExit             - After method: Get was executed in 42175 miliseconds
+DEBUG 2016-12-20 00:06:04,437 78191ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:06:04,438 78193ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:06:04,438 78193ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:06:06,837 80591ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:09:26,169 18046ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:09:26,477 18354ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:09:26,478 18355ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:09:33,027 24905ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:11:05,795 117672ms LoggingAspect          OnException        - Method: IsHistoryValid throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-20 00:11:05,813 117690ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 92784 miliseconds
+DEBUG 2016-12-20 00:11:05,814 117691ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-20 00:11:20,674   398ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:11:20,850   574ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:11:20,851   575ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:12:31,612 71336ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:17:42,305 28854ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:17:42,676 29226ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:17:42,677 29227ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:17:42,678 29228ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:19:51,976 158525ms LoggingAspect          OnException        - Method: IsHistoryValid throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-20 00:19:52,006 158555ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 129327 miliseconds
+DEBUG 2016-12-20 00:19:52,021 158570ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-20 00:19:58,444 164993ms LoggingAspect          OnExit             - After method: Get was executed in 136039 miliseconds
+DEBUG 2016-12-20 00:20:06,883 173432ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:20:06,885 173434ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:20:06,885 173434ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:20:06,885 173434ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:28:05,564   193ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:28:05,763   392ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:28:05,764   393ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:28:05,765   394ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:29:41,937 14466ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:29:41,963 14492ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:29:42,121 14649ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:29:42,121 14649ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:29:42,122 14650ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:29:42,122 14650ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:29:42,123 14651ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:29:42,123 14651ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:36:21,238  5032ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:36:21,390  5184ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:36:21,391  5185ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:36:21,393  5186ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:38:00,587 104381ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 99194 miliseconds
+DEBUG 2016-12-20 00:38:02,687 106480ms LoggingAspect          OnExit             - After method: Get was executed in 101432 miliseconds
+DEBUG 2016-12-20 00:45:35,692 23839ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:45:36,542 24688ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:45:36,572 24718ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 1 miliseconds
+DEBUG 2016-12-20 00:45:36,576 24722ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:45:36,607 24753ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 29 miliseconds
+DEBUG 2016-12-20 00:45:36,608 24754ms LoggingAspect          OnExit             - After method: Get was executed in 503 miliseconds
+DEBUG 2016-12-20 00:45:59,483  2552ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:45:59,483  2552ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:45:59,673  2742ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:45:59,673  2742ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:45:59,674  2743ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:45:59,674  2743ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:45:59,675  2744ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:45:59,675  2744ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:45:59,769  2838ms LoggingAspect          OnException        - Method: IsHistoryValid throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-20 00:45:59,769  2838ms LoggingAspect          OnException        - Method: IsHistoryValid throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-20 00:45:59,796  2865ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 120 miliseconds
+DEBUG 2016-12-20 00:45:59,796  2866ms LoggingAspect          OnException        - Method: Get throw an excetion PostSharp.Aspects.MethodExecutionArgs
+DEBUG 2016-12-20 00:48:05,386  6837ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 00:48:05,638  7089ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 00:48:05,640  7091ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 00:48:05,641  7092ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 00:48:05,644  7095ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 3 miliseconds
+DEBUG 2016-12-20 00:48:05,645  7096ms LoggingAspect          OnExit             - After method: Get was executed in 163 miliseconds
+DEBUG 2016-12-20 08:24:04,670 16668ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 08:24:06,917 18915ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 08:24:06,918 18916ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 08:24:06,920 18918ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 08:24:06,961 18959ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 41 miliseconds
+DEBUG 2016-12-20 08:24:06,962 18960ms LoggingAspect          OnExit             - After method: Get was executed in 1244 miliseconds
+DEBUG 2016-12-20 08:24:38,350  2985ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 08:24:38,987  3623ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 08:24:38,989  3624ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 08:24:38,991  3626ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 08:24:38,996  3631ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 4 miliseconds
+DEBUG 2016-12-20 08:24:38,996  3631ms LoggingAspect          OnExit             - After method: Get was executed in 623 miliseconds
+DEBUG 2016-12-20 08:29:23,962  1947ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 08:29:24,577  2562ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 08:29:24,581  2566ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 1 miliseconds
+DEBUG 2016-12-20 08:29:24,585  2570ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 08:29:24,617  2602ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 32 miliseconds
+DEBUG 2016-12-20 08:29:24,617  2602ms LoggingAspect          OnExit             - After method: Get was executed in 399 miliseconds
+DEBUG 2016-12-20 08:29:42,932 20916ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 08:29:42,932 20916ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 08:29:42,932 20916ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 08:29:42,932 20916ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 08:29:42,932 20916ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 0 miliseconds
+DEBUG 2016-12-20 08:29:42,932 20916ms LoggingAspect          OnExit             - After method: Get was executed in 1 miliseconds
+DEBUG 2016-12-20 08:47:23,174 1081159ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 08:47:23,230 1081215ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 08:47:23,234 1081219ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 08:47:23,234 1081219ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 08:47:23,238 1081223ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 1 miliseconds
+DEBUG 2016-12-20 08:47:23,242 1081227ms LoggingAspect          OnExit             - After method: Get was executed in 47 miliseconds
+DEBUG 2016-12-20 08:49:22,785   784ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 08:49:23,162  1161ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 08:49:23,162  1161ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 08:49:23,166  1165ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 08:49:23,166  1165ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 2 miliseconds
+DEBUG 2016-12-20 08:49:23,166  1165ms LoggingAspect          OnExit             - After method: Get was executed in 276 miliseconds
+DEBUG 2016-12-20 08:55:29,060 367058ms LoggingAspect          OnEntry            - Before method: Get execution
+DEBUG 2016-12-20 08:55:29,060 367058ms LoggingAspect          OnEntry            - Before method: CreateNetwork execution
+DEBUG 2016-12-20 08:55:29,060 367058ms LoggingAspect          OnExit             - After method: CreateNetwork was executed in 0 miliseconds
+DEBUG 2016-12-20 08:55:29,064 367062ms LoggingAspect          OnEntry            - Before method: IsHistoryValid execution
+DEBUG 2016-12-20 08:55:29,064 367062ms LoggingAspect          OnExit             - After method: IsHistoryValid was executed in 0 miliseconds
+DEBUG 2016-12-20 08:55:29,064 367062ms LoggingAspect          OnExit             - After method: Get was executed in 1 miliseconds

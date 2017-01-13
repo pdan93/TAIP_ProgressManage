@@ -39,6 +39,7 @@ namespace Workflow
             return (SprintPrototype)MemberwiseClone();
         }
 
+        [LoggingAspect]
         public void CreateNetwork(SprintEntity entity)
         {
             State start = new State(StatesDictionary.Start);
@@ -69,62 +70,44 @@ namespace Workflow
             States = new List<State>() { start, estimationStatus, addToImplementation, implementationDone, testingStatus, end };
         }
 
-
-        public bool IsHistoryValid(Task task)
+        [LoggingAspect]
+        public string IsHistoryValid(Task task, IEnumerable<Revion> taskRevions)
         {
             task.State = States.SingleOrDefault(x => x.Name == StatesDictionary.Start);
-            foreach (var taskHistory in GetTaskHistory())
+            foreach (var taskHistory in taskRevions.Select(x=> x.Fields))
             {
                 var nextState = task.State.GetValidTransition()?.NextState;
                 var properties = taskHistory.GetType().GetProperties();
 
+                if (nextState == null)
+                {
+                    return "The task history doesn't match the petri nets transitions from state: " + task.State.Name;
+                }
+
                 foreach (var property in properties)
                 {
                     var taskProperty = task.GetType().GetProperty(property.Name);
-                    taskProperty.SetValue(task, property.GetValue(taskHistory, null));
+                    if (taskProperty.Name == "State")
+                    {
+                        var stateName = (string)property.GetValue(taskHistory, null);
+                        taskProperty.SetValue(task, States.SingleOrDefault(x => x.Name == stateName));
+                    }
+                    else
+                    {
+                        taskProperty.SetValue(task, property.GetValue(taskHistory, null));
+                    }
+                    
                 }
+
+
 
                 if (task.State.Name != StatesDictionary.End && nextState.Name != task.State.Name)
                 {
-                    return false;
+                    return "The state should be " + nextState.Name + " but it is: " + task.State.Name;
                 }
             }
-            return true;
+            return "The History of the task passed the test";
         }
-
-        public IEnumerable<object> GetTaskHistory()
-        {
-            yield return new
-            {
-                State = States.SingleOrDefault(x => x.Name == StatesDictionary.EstimationStatus),
-                Approved = true,
-                Estimation = 5
-            };
-
-            yield return new
-            {
-                State = States.SingleOrDefault(x => x.Name == StatesDictionary.AddToImplementation),
-            };
-
-            yield return new
-            {
-                State = States.SingleOrDefault(x => x.Name == StatesDictionary.ImplementationDone),
-                Implemented = true
-            };
-
-            yield return new
-            {
-                State = States.SingleOrDefault(x => x.Name == StatesDictionary.TestingStatus),
-                Tested = true
-            };
-
-            yield return new
-            {
-                State = States.SingleOrDefault(x => x.Name == StatesDictionary.End),
-                ResolvedState = "done"
-            };
-        }
-
 
         public bool ValidateHistoryOfEntity(List<SprintEntity> entities)
         {
