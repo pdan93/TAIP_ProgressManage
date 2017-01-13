@@ -1,0 +1,59 @@
+[
+  {
+    "name": "SendBugToImplementation",
+    "preconditions": [
+      { "State": "Start" },
+      { "Type": "Defect" }
+    ]
+  },
+  {
+    "name": "Estimate",
+    "preconditions": [
+      { "State": "Start" },
+      { "Type": "Task" }
+    ]
+  },
+  {
+    "name": "SendTaskToImplementation",
+    "preconditions": [
+      { "State": "EstimationStatus" },
+      { "Type": "Task" },
+      { "Estimation": "0" },
+      { "Approved": "true" }
+    ]
+  },
+  {
+    "name": "CloseTask",
+    "preconditions": [
+      { "State": "EstimationStatus" },
+      { "Type": "Task" },
+      { "Approved": "false" }
+    ]
+  },
+  {
+    "name": "StartImplementation",
+    "preconditions": [
+      { "State": "Start" },
+      { "Approved": "True" }
+    ]
+  },
+  {
+    "name": "StartTesting",
+    "preconditions": [
+      { "Implemented": "true" },
+      { "Tested": "HasValue" }
+    ]
+  },
+  {
+    "name": "SendBackToImplementation",
+    "preconditions": [
+      { "Tested": "false" }
+    ]
+  },
+  {
+    "name": "CloseTaskAfterImplementation",
+    "preconditions": [
+      { "Tested": "true" }
+    ]
+  }
+]
