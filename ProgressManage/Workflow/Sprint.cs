@@ -42,22 +42,20 @@ namespace Workflow
         }
 
         [LoggingAspect]
-        public void CreateNetwork(SprintEntity sprintEntity, string transitionPath)
+        public void CreateNetwork(SprintEntity sprintEntity, string transitionsDataPath)
         {
             var statesDictionary = GetStatesDictionary();
-            using (var streamReader = new StreamReader(transitionPath))
+            using (var streamReader = new StreamReader(transitionsDataPath))
             {
-                var transitions = JsonConvert.DeserializeObject<IEnumerable<TransitionJson>>(streamReader.ReadToEnd());
-                foreach (var transitionData in transitions)
+                var transitionsData = JsonConvert.DeserializeObject<IEnumerable<TransitionData>>(streamReader.ReadToEnd());
+                foreach (var transitionData in transitionsData)
                 {
-                    var methodInfo = typeof(Preconditions).GetMethod(transitionData.Precondition);
-                    var preconditionMethod = (Func<SprintEntity, bool>)Delegate.CreateDelegate(typeof(Func<SprintEntity, bool>), methodInfo);
-                    var transition = new Transition(sprintEntity, preconditionMethod, statesDictionary[transitionData.NextState]);
-                    statesDictionary[transitionData.PrevState].Transitions.Add(transition);
+                    Transition transition = TransitionData.ToTransition(transitionData, sprintEntity, statesDictionary);
+                    statesDictionary[transitionData.PrevState].AddTransition(transition);
                 }
             }
             States = new List<State>();
-            States.AddRange(statesDictionary.Values );
+            States.AddRange(statesDictionary.Values);
         }
 
         private static Dictionary<string, State> GetStatesDictionary()
@@ -104,14 +102,5 @@ namespace Workflow
             return "The History of the task passed the test";
         }
 
-    }
-
-
-    public class TransitionJson
-    {
-        public string Name { get; set; }
-        public string PrevState { get; set; }
-        public string NextState { get; set; }
-        public string Precondition { get; set; }
     }
 }

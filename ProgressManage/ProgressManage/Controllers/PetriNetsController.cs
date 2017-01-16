@@ -10,20 +10,20 @@ namespace ProgressManage.Controllers
     public class PetriNetsController : ApiController
     {
         private readonly string _revisionsFilePath = HostingEnvironment.MapPath(@"~/App_Data/taskRevisions.json");
-        private readonly string _transitionPath = HostingEnvironment.MapPath(@"~/App_Data/transitions.json");
+        private readonly string _transitionsDataPath = HostingEnvironment.MapPath(@"~/App_Data/transitions.json");
 
         [HttpGet]
         [LoggingAspect]
-        public string Get(string path = null, string transitionPath = null)
+        public string Get(string path = null, string transitionsDataPath = null)
         {
             if (path == null)
             {
                 path = _revisionsFilePath;
             }
 
-            if (transitionPath == null)
+            if (transitionsDataPath == null)
             {
-                transitionPath = _transitionPath;
+                transitionsDataPath = _transitionsDataPath;
             }
 
             DataHandler dataHandler = new DataHandler();
@@ -31,7 +31,7 @@ namespace ProgressManage.Controllers
             var task = new Task(new State(StatesNames.Start));
 
             Sprint sprint = new Sprint();
-            sprint.CreateNetwork(task, transitionPath);
+            sprint.CreateNetwork(task, transitionsDataPath);
             return sprint.IsHistoryValid(task, taskRevions);
         }
 

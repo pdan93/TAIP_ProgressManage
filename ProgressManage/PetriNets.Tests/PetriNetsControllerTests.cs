@@ -13,7 +13,7 @@ namespace PetriNets.Tests
     {
         private readonly string _revionsFilePathInvalid = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\..\ProgressManage\App_Data\taskRevisions.json");
         private readonly string _revionsFilePathValid = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\..\ProgressManage\App_Data\taskRevisionsValid.json");
-        private readonly string _transitionPath = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\..\ProgressManage\App_Data\transitions.json");
+        private readonly string _transitionsDataPath = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\..\ProgressManage\App_Data\transitions.json");
 
         [Test]
         public void ValidTaskHistory_Get_ShouldBeValid()
@@ -21,7 +21,7 @@ namespace PetriNets.Tests
             //Arrange 
             var controller = new PetriNetsController();
             //Act
-            string response = controller.Get(_revionsFilePathValid, _transitionPath);
+            string response = controller.Get(_revionsFilePathValid, _transitionsDataPath);
             //Assert
             response.ShouldBe("The History of the task passed the test");
         }
@@ -32,7 +32,7 @@ namespace PetriNets.Tests
             //Arrange
             var controller = new PetriNetsController();
             //Act
-            string response = controller.Get(_revionsFilePathInvalid, _transitionPath);
+            string response = controller.Get(_revionsFilePathInvalid, _transitionsDataPath);
             //Assert
             response.ShouldNotBe("The History of the task passed the test");
         }
