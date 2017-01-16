@@ -9,8 +9,6 @@ namespace ProgressManage
         {
             // Web API configuration and services
             config.Formatters.Add(new JsonMediaTypeFormatter());
-            config.Formatters.Add(new XmlMediaTypeFormatter());
-
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -19,6 +17,8 @@ namespace ProgressManage
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
 
         }
     }

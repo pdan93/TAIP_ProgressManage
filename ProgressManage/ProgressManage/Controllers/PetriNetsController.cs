@@ -3,12 +3,13 @@ using System.Web.Http;
 using PetriNets;
 using Workflow;
 using Workflow.SprintEntities;
+using System.Web.Hosting;
 
 namespace ProgressManage.Controllers
 {
     public class PetriNetsController : ApiController
     {
-        private const string RevionsFilePath = "E:\\Informatica\\Master\\Advanced Software Engineering Techniques\\ProgressManage\\TestFiles\\taskRevisions.json";
+        private string revisionsFilePath = HostingEnvironment.MapPath(@"~/App_Data/taskRevisions.json");
 
         [HttpGet]
         [LoggingAspect]
@@ -16,7 +17,7 @@ namespace ProgressManage.Controllers
         {
             if (path == null)
             {
-                path = RevionsFilePath;
+                path = revisionsFilePath;
             }
             DataHandler dataHandler = new DataHandler();
             var taskRevions = dataHandler.ImportTaskRevisions(path).Skip(1);
@@ -24,7 +25,6 @@ namespace ProgressManage.Controllers
 
             Sprint sprint = new Sprint();
             sprint.CreateNetwork(task);
-
             return sprint.IsHistoryValid(task, taskRevions);
         }
 
