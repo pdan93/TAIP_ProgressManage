@@ -16,8 +16,6 @@ namespace ProgressManage.Controllers
         {
             NetworkCredential credential;
             var teamProjectCollection = GetTeamProjectCollection(new Uri("https://alexandrurusu93.visualstudio.com/DefaultCollection"),
-                ConfigurationManager.AppSettings["TfsClientUser"],
-                ConfigurationManager.AppSettings["TfsClientPassword"],
                 out credential);
             return GetWorkItems(teamProjectCollection)
                 .Select(item => item.Title);
@@ -34,9 +32,10 @@ namespace ProgressManage.Controllers
                 .OfType<WorkItem>(); ;
         }
 
-        private static TfsTeamProjectCollection GetTeamProjectCollection(Uri collectionUri, string user,
-            string password, out NetworkCredential credential)
+        private static TfsTeamProjectCollection GetTeamProjectCollection(Uri collectionUri, out NetworkCredential credential)
         {
+            string user = ConfigurationManager.AppSettings["TfsClientUser"];
+            string password = ConfigurationManager.AppSettings["TfsClientPassword"];
             credential = new NetworkCredential(user, password);
             BasicAuthCredential basicCred = new BasicAuthCredential(credential);
             TfsClientCredentials tfsCred = new TfsClientCredentials(basicCred);
