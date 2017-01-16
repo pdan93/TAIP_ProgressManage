@@ -109,10 +109,6 @@ namespace Workflow
             return "The History of the task passed the test";
         }
 
-        public bool ValidateHistoryOfEntity(List<SprintEntity> entities)
-        {
-            return false;
-        }
     }
 
 }

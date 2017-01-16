@@ -18,7 +18,7 @@ namespace Workflow.Repositories
                 "[System.State], [System.AssignedTo]," +
                 "[System.Title] FROM WorkItems");
             return workItemCollection
-                .OfType<WorkItem>(); ;
+                .OfType<WorkItem>();
         }
 
         public static TfsTeamProjectCollection GetTeamProjectCollection(Uri collectionUri, out NetworkCredential credential)
