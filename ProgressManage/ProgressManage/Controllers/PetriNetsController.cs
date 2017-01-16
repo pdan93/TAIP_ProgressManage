@@ -9,7 +9,7 @@ namespace ProgressManage.Controllers
 {
     public class PetriNetsController : ApiController
     {
-        private string revisionsFilePath = HostingEnvironment.MapPath(@"~/App_Data/taskRevisions.json");
+        private readonly string _revisionsFilePath = HostingEnvironment.MapPath(@"~/App_Data/taskRevisions.json");
 
         [HttpGet]
         [LoggingAspect]
@@ -17,7 +17,7 @@ namespace ProgressManage.Controllers
         {
             if (path == null)
             {
-                path = revisionsFilePath;
+                path = _revisionsFilePath;
             }
             DataHandler dataHandler = new DataHandler();
             var taskRevions = dataHandler.ImportTaskRevisions(path).Skip(1);

@@ -1,11 +1,9 @@
 ﻿using System;
-using Microsoft.TeamFoundation.Client;
-using Microsoft.TeamFoundation.WorkItemTracking.Client;
 using System.Web.Http;
 using System.Net;
 using System.Collections.Generic;
 using System.Linq;
-using System.Configuration;
+using Workflow.Repositories;
 
 namespace ProgressManage.Controllers
 {
@@ -15,34 +13,10 @@ namespace ProgressManage.Controllers
         public IEnumerable<string> Get()
         {
             NetworkCredential credential;
-            var teamProjectCollection = GetTeamProjectCollection(new Uri("https://alexandrurusu93.visualstudio.com/DefaultCollection"),
-                out credential);
-            return GetWorkItems(teamProjectCollection)
+            var uri = new Uri("https://alexandrurusu93.visualstudio.com/DefaultCollection");
+            var teamProjectCollection = TfsRepository.GetTeamProjectCollection(uri, out credential);
+            return TfsRepository.GetWorkItems(teamProjectCollection)
                 .Select(item => item.Title);
-        }
-
-        private static IEnumerable<WorkItem> GetWorkItems(TfsConnection teamProjectCollection)
-        {
-            WorkItemStore workItemStore = teamProjectCollection.GetService<WorkItemStore>();
-            WorkItemCollection workItemCollection = workItemStore.Query(
-                "SELECT [System.Id], [System.WorkItemType]," +
-                "[System.State], [System.AssignedTo]," +
-                "[System.Title] FROM WorkItems");
-            return workItemCollection
-                .OfType<WorkItem>(); ;
-        }
-
-        private static TfsTeamProjectCollection GetTeamProjectCollection(Uri collectionUri, out NetworkCredential credential)
-        {
-            string user = ConfigurationManager.AppSettings["TfsClientUser"];
-            string password = ConfigurationManager.AppSettings["TfsClientPassword"];
-            credential = new NetworkCredential(user, password);
-            BasicAuthCredential basicCred = new BasicAuthCredential(credential);
-            TfsClientCredentials tfsCred = new TfsClientCredentials(basicCred);
-            tfsCred.AllowInteractive = false;
-            TfsTeamProjectCollection teamProjectCollection = new TfsTeamProjectCollection(collectionUri, tfsCred);
-            teamProjectCollection.Authenticate();
-            return teamProjectCollection;
         }
     }
 }
