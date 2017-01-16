@@ -1,9 +1,9 @@
-﻿using NUnit.Framework;
-using PetriNets.States;
+﻿using System;
+using System.IO;
+using System.Reflection;
+using NUnit.Framework;
 using ProgressManage.Controllers;
 using Shouldly;
-using Workflow;
-using Workflow.SprintEntities;
 
 
 namespace PetriNets.Tests
@@ -11,8 +11,9 @@ namespace PetriNets.Tests
     [TestFixture]
     public class PetriNetsControllerTests
     {
-        private const string RevionsFilePathInvalid = "E:\\Informatica\\Master\\Advanced Software Engineering Techniques\\ProgressManage\\TestFiles\\taskRevisions.json";
-        private const string RevionsFilePathValid = "E:\\Informatica\\Master\\Advanced Software Engineering Techniques\\ProgressManage\\TestFiles\\taskRevisionsValid.json";
+        private readonly string _revionsFilePathInvalid = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\..\ProgressManage\App_Data\taskRevisions.json");
+        private readonly string _revionsFilePathValid = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\..\ProgressManage\App_Data\taskRevisionsValid.json");
+        private readonly string _transitionPath = Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\..\ProgressManage\App_Data\transitions.json");
 
         [Test]
         public void ValidTaskHistory_Get_ShouldBeValid()
@@ -20,7 +21,7 @@ namespace PetriNets.Tests
             //Arrange 
             var controller = new PetriNetsController();
             //Act
-            string response = controller.Get(RevionsFilePathValid);
+            string response = controller.Get(_revionsFilePathValid, _transitionPath);
             //Assert
             response.ShouldBe("The History of the task passed the test");
         }
@@ -31,9 +32,10 @@ namespace PetriNets.Tests
             //Arrange
             var controller = new PetriNetsController();
             //Act
-            string response = controller.Get(RevionsFilePathInvalid);
+            string response = controller.Get(_revionsFilePathInvalid, _transitionPath);
             //Assert
             response.ShouldNotBe("The History of the task passed the test");
         }
+
     }
 }

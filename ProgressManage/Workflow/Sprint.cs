@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Reflection;
+using System.Web.Hosting;
+using Newtonsoft.Json;
 using PetriNets;
 using PetriNets.States;
 using Workflow.SprintEntities;
@@ -12,7 +14,7 @@ namespace Workflow
     {
         public IEnumerable<Story> Stories { get; set; }
         public PetriNetwork PetriNetwork;
-
+        
         public List<State> States;
 
         public Sprint()
@@ -40,40 +42,35 @@ namespace Workflow
         }
 
         [LoggingAspect]
-        public void CreateNetwork(SprintEntity entity)
+        public void CreateNetwork(SprintEntity sprintEntity, string transitionPath)
         {
-            State start = new State(StatesDictionary.Start);
-            State estimationStatus = new State(StatesDictionary.EstimationStatus);
-            State addToImplementation = new State(StatesDictionary.AddToImplementation);
-            State implementationDone = new State(StatesDictionary.ImplementationDone);
-            State testingStatus = new State(StatesDictionary.TestingStatus);
-            State end = new State(StatesDictionary.End);
+            var statesDictionary = GetStatesDictionary();
+            using (var streamReader = new StreamReader(transitionPath))
+            {
+                var transitions = JsonConvert.DeserializeObject<IEnumerable<TransitionJson>>(streamReader.ReadToEnd());
+                foreach (var transitionData in transitions)
+                {
+                    var methodInfo = typeof(Preconditions).GetMethod(transitionData.Precondition);
+                    var preconditionMethod = (Func<SprintEntity, bool>)Delegate.CreateDelegate(typeof(Func<SprintEntity, bool>), methodInfo);
+                    var transition = new Transition(sprintEntity, preconditionMethod, statesDictionary[transitionData.NextState]);
+                    statesDictionary[transitionData.PrevState].Transitions.Add(transition);
+                }
+            }
+            States = new List<State>();
+            States.AddRange(statesDictionary.Values );
+        }
 
-            Transition estimateTransition = new Transition(entity, Preconditions.Estimate, estimationStatus);
-            Transition closeTaskTransition = new Transition(entity, Preconditions.CloseTask, end);
-            Transition sendTaskToImplementationTransition = new Transition(entity, Preconditions.SendTaskToImplementation, addToImplementation);
-            Transition sendBugToImplementationTransition = new Transition(entity, Preconditions.SendBugToImplementation, addToImplementation);
-            Transition startImplementationTransition = new Transition(entity, Preconditions.StartImplementation, implementationDone);
-            Transition startTestingTransition = new Transition(entity, Preconditions.StartTesting, testingStatus);
-            Transition sendBackToImplementationTransition = new Transition(entity, Preconditions.SendBackToImplementation, addToImplementation);
-            Transition closeTaskAfterImplementationTransition = new Transition(entity, Preconditions.CloseTaskAfterImplementation, end);
-
-            start.Transitions.Add(estimateTransition);
-            start.Transitions.Add(sendBugToImplementationTransition);
-            estimationStatus.Transitions.Add(closeTaskTransition);
-            estimationStatus.Transitions.Add(sendTaskToImplementationTransition);
-            addToImplementation.Transitions.Add(startImplementationTransition);
-            implementationDone.Transitions.Add(startTestingTransition);
-            testingStatus.Transitions.Add(closeTaskAfterImplementationTransition);
-            testingStatus.Transitions.Add(sendBackToImplementationTransition);
-
-            States = new List<State>() { start, estimationStatus, addToImplementation, implementationDone, testingStatus, end };
+        private static Dictionary<string, State> GetStatesDictionary()
+        {
+            return typeof(StatesNames)
+                .GetFields()
+                .ToDictionary(field => field.Name, field => new State(field.GetValue(typeof(StatesNames)) as string));
         }
 
         [LoggingAspect]
         public string IsHistoryValid(Task task, IEnumerable<Revion> taskRevions)
         {
-            task.State = States.SingleOrDefault(x => x.Name == StatesDictionary.Start);
+            task.State = States.SingleOrDefault(x => x.Name == StatesNames.Start);
             foreach (var taskHistory in taskRevions.Select(x=> x.Fields))
             {
                 var nextState = task.State.GetValidTransition()?.NextState;
@@ -99,9 +96,7 @@ namespace Workflow
                     
                 }
 
-
-
-                if (task.State.Name != StatesDictionary.End && nextState.Name != task.State.Name)
+                if (task.State.Name != StatesNames.End && nextState.Name != task.State.Name)
                 {
                     return "The state should be " + nextState.Name + " but it is: " + task.State.Name;
                 }
@@ -111,4 +106,12 @@ namespace Workflow
 
     }
 
+
+    public class TransitionJson
+    {
+        public string Name { get; set; }
+        public string PrevState { get; set; }
+        public string NextState { get; set; }
+        public string Precondition { get; set; }
+    }
 }

@@ -3,7 +3,7 @@ using Workflow.SprintEntities;
 
 namespace Workflow
 {
-    public static class StatesDictionary
+    public static class StatesNames
     {
         public static string Start = "To Do";
         public static string EstimationStatus = "estimationStatus";
@@ -23,13 +23,13 @@ namespace Workflow
         public static bool SendBugToImplementation(SprintEntity entity)
         {
             return entity.GetType() == typeof(Defect) 
-                && entity.State.Name == StatesDictionary.Start;
+                && entity.State.Name == StatesNames.Start;
         }
 
         public static bool Estimate(SprintEntity entity)
         {
             return entity.GetType() == typeof(Task) 
-                && entity.State.Name == StatesDictionary.Start;
+                && entity.State.Name == StatesNames.Start;
         }
 
         public static bool SendTaskToImplementation(SprintEntity entity)
@@ -37,7 +37,7 @@ namespace Workflow
             var task = entity as Task;
             if (entity.GetType() != typeof(Task) && task.Approved.HasValue && task.Approved == false)
                 return false;
-            return task.State.Name == StatesDictionary.EstimationStatus
+            return task.State.Name == StatesNames.EstimationStatus
                    && task.RemainingWork > 0;
         }
 
@@ -45,7 +45,7 @@ namespace Workflow
         {
             if (entity.GetType() != typeof(Task)) return false;
             var task = entity as Task;
-            return task.State.Name == StatesDictionary.EstimationStatus
+            return task.State.Name == StatesNames.EstimationStatus
                 && task.Approved.HasValue 
                 && !task.Approved.Value;
         }

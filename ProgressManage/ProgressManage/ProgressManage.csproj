@@ -273,6 +273,7 @@
     <Content Include="packages.config" />
     <Content Include="App_Data\taskRevisions.json" />
     <Content Include="App_Data\taskRevisionsValid.json" />
+    <Content Include="App_Data\transitions.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

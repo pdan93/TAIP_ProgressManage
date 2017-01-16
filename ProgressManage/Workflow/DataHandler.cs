@@ -7,13 +7,11 @@ namespace Workflow
 {
     public class DataHandler
     {
-
-
-        public List<Revion> ImportTaskRevisions(string RevionsFilePath)
+        public List<Revion> ImportTaskRevisions(string revionsFilePath)
         {
-            using(StreamReader r = new StreamReader(RevionsFilePath))
+            using(var streamReader = new StreamReader(revionsFilePath))
             {
-                string json = r.ReadToEnd();
+                string json = streamReader.ReadToEnd();
                 string jsonWithoutSystem = json.Replace("System.", string.Empty);
                 string jsonWithoutScheduling = jsonWithoutSystem.Replace("Microsoft.VSTS.Scheduling.", string.Empty);
                 RevionGroup items = JsonConvert.DeserializeObject<RevionGroup>(jsonWithoutScheduling);

@@ -1,0 +1,50 @@
+[
+        {
+            "name": "estimateTransition",
+            "prevState": "Start",
+            "nextState": "EstimationStatus",
+            "precondition" : "Estimate"
+        },
+        {
+            "name": "sendBugToImplementationTransition",
+            "prevState": "Start",
+            "nextState": "AddToImplementation",
+            "precondition" : "SendBugToImplementation"
+        },
+        {
+            "name": "closeTaskTransition",
+            "prevState": "EstimationStatus",
+            "nextState": "End",
+            "precondition" : "CloseTask"
+        },
+        {
+            "name": "sendTaskToImplementationTransition",
+            "prevState": "EstimationStatus",
+            "nextState": "AddToImplementation",
+            "precondition" : "SendTaskToImplementation"
+        },
+        {
+            "name": "startImplementationTransition",
+            "prevState": "AddToImplementation",
+            "nextState": "ImplementationDone",
+            "precondition" : "StartImplementation"
+        },
+        {
+            "name": "startTestingTransition",
+            "prevState": "ImplementationDone",
+            "nextState": "TestingStatus",
+            "precondition" : "StartTesting"
+        },
+        {
+            "name": "sendBackToImplementationTransition",
+            "prevState": "TestingStatus",
+            "nextState": "AddToImplementation",
+            "precondition" : "SendBackToImplementation"
+        },
+        {
+            "name": "closeTaskAfterImplementationTransition",
+            "prevState": "TestingStatus",
+            "nextState": "End",
+            "precondition" : "CloseTaskAfterImplementation"
+        }
+]
