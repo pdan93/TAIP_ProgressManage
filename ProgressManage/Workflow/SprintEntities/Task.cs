@@ -3,7 +3,7 @@ using PetriNets.States;
 
 namespace Workflow.SprintEntities
 {
-    public class Task : SprintEntity, ISprintEntityFactory
+    public class Task : SprintEntity
     {
         public bool? Approved { get; set; }
         public float RemainingWork { get; set; }
