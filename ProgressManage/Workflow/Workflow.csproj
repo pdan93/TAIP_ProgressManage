@@ -247,7 +247,6 @@
     <Compile Include="Resources\Project.cs" />
     <Compile Include="Sprint.cs" />
     <Compile Include="SprintEntities\Story.cs" />
-    <Compile Include="SprintEntities\StoryFactory.cs" />
     <Compile Include="SprintEntities\Task.cs" />
     <Compile Include="SprintPrototype.cs" />
     <Compile Include="TransitionData.cs" />

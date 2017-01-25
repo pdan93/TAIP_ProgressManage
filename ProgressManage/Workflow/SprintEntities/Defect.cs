@@ -9,7 +9,7 @@ namespace Workflow.SprintEntities
         Minor
     }
 
-    public class Defect : SprintEntity, ISprintEntityFactory
+    public class Defect : SprintEntity
     {
         public PriorityEnum Priority { get; set; }
         public Defect(State state) : base(state)

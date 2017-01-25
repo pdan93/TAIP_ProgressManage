@@ -3,7 +3,7 @@ using PetriNets;
 
 namespace Workflow.SprintEntities
 {
-    public class Story : SprintEntity, ISprintEntityFactory
+    public class Story : SprintEntity
     {
         public List<Task> Tasks;
         public List<Defect> Defects;
