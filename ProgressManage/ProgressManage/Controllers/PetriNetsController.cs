@@ -1,15 +1,19 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Web.Http;
 using PetriNets;
 using Workflow;
 using Workflow.SprintEntities;
 using System.Web.Hosting;
+using System.Web.Http.Cors;
+using ProgressManage.Models;
 
 namespace ProgressManage.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class PetriNetsController : ApiController
     {
-        private readonly string _revisionsFilePath = HostingEnvironment.MapPath(@"~/App_Data/taskRevisions.json");
+        private readonly string _revisionsFilePath = HostingEnvironment.MapPath(@"~/App_Data/taskRevisionsValid.json");
         private readonly string _transitionsDataPath = HostingEnvironment.MapPath(@"~/App_Data/transitions.json");
 
         [HttpGet]
@@ -35,11 +39,18 @@ namespace ProgressManage.Controllers
             return sprint.IsHistoryValid(task, taskRevions);
         }
 
-        [HttpPost]
-        [LoggingAspect]
-        public string Post([FromBody] string text)
+        private IEnumerable<Link> CreateLinks()
         {
-            return text;
+            var links = new[]
+            {
+                new Link
+                {
+                    Method = "GET",
+                    Rel = "self",
+                    Href = Url.Link("Get", new { path = "taskRevisionsValid.json", transitionsDataPath = "transitions"})
+                }
+            };
+            return links;
         }
     }
 }

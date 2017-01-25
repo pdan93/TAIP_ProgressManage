@@ -1,0 +1,5 @@
+[
+  {"title":"Team Blue","subtitle":"iteration 1","ranges":[223,285,350],"measures":[220,270],"markers":[200]},
+  {"title":"Team Red","subtitle":"iteration 1","ranges":[20,25,25],"measures":[10,10],"markers":[0]},
+  {"title":"Team Green","subtitle":"iteration 1","ranges":[450,500,550],"measures":[50,55],"markers":[505]}
+]

@@ -1,0 +1,59 @@
+
+{
+    "Projects" : [
+        {
+            "Name" : "ProgressManage",
+            "Teams" : [
+                {
+                    "Name" : "Team Blue",
+                    "Iterations" : [
+                        {
+                            "Name" : "Iteration 1",
+                            "TotalCapacity" : 250, 
+                            "WorkDone" : 180,
+                            "InitialEstimations" : 230,
+                            "AditionalWork" : 15,
+                            "AditionalWorkDone" : 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name" : "TAIP",
+            "Team" : [
+                {
+                    "Name" : "Team Green",
+                    "Iterations" : [
+                        {
+                            "Name" : "Iteration 1",
+                            "TotalCapacity" : 250, 
+                            "WorkDone" : 180,
+                            "InitialEstimations" : 230,
+                            "AditionalWork" : 15,
+                            "AditionalWorkDone" : 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name" : "Advance Mockups",
+            "Team" : [
+                {
+                    "Name" : "Team Red",
+                    "Iterations" : [
+                        {
+                            "Name" : "Iteration 1",
+                            "TotalCapacity" : 250, 
+                            "WorkDone" : 180,
+                            "InitialEstimations" : 230,
+                            "AditionalWork" : 15,
+                            "AditionalWorkDone" : 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -9,6 +9,7 @@ namespace ProgressManage
         {
             // Web API configuration and services
             config.Formatters.Add(new JsonMediaTypeFormatter());
+            config.EnableCors();
             // Web API routes
             config.MapHttpAttributeRoutes();
 

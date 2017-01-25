@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Web.Hosting;
 using Newtonsoft.Json;
 using PetriNets;
@@ -50,7 +51,7 @@ namespace Workflow
                 var transitionsData = JsonConvert.DeserializeObject<IEnumerable<TransitionData>>(streamReader.ReadToEnd());
                 foreach (var transitionData in transitionsData)
                 {
-                    Transition transition = TransitionData.ToTransition(transitionData, sprintEntity, statesDictionary);
+                    var transition = TransitionData.ToTransition(transitionData, sprintEntity, statesDictionary);
                     statesDictionary[transitionData.PrevState].AddTransition(transition);
                 }
             }
@@ -58,7 +59,7 @@ namespace Workflow
             States.AddRange(statesDictionary.Values);
         }
 
-        private static Dictionary<string, State> GetStatesDictionary()
+        public static Dictionary<string, State> GetStatesDictionary()
         {
             return typeof(StatesNames)
                 .GetFields()
@@ -66,41 +67,47 @@ namespace Workflow
         }
 
         [LoggingAspect]
-        public string IsHistoryValid(Task task, IEnumerable<Revion> taskRevions)
+        public string IsHistoryValid(Task task, IEnumerable<Revision> taskRevions)
         {
             task.State = States.SingleOrDefault(x => x.Name == StatesNames.Start);
-            foreach (var taskHistory in taskRevions.Select(x=> x.Fields))
+            foreach (var taskHistory in taskRevions.Select(x => x.Fields))
             {
                 var nextState = task.State.GetValidTransition()?.NextState;
-                var properties = taskHistory.GetType().GetProperties();
-
                 if (nextState == null)
                 {
                     return "The task history doesn't match the petri nets transitions from state: " + task.State.Name;
                 }
 
-                foreach (var property in properties)
-                {
-                    var taskProperty = task.GetType().GetProperty(property.Name);
-                    if (taskProperty.Name == "State")
-                    {
-                        var stateName = (string)property.GetValue(taskHistory, null);
-                        taskProperty.SetValue(task, States.SingleOrDefault(x => x.Name == stateName));
-                    }
-                    else
-                    {
-                        taskProperty.SetValue(task, property.GetValue(taskHistory, null));
-                    }
-                    
-                }
+                var properties = taskHistory.GetType().GetProperties();
+                UpdateTaskProperties(task, properties, taskHistory);
 
                 if (task.State.Name != StatesNames.End && nextState.Name != task.State.Name)
                 {
                     return "The state should be " + nextState.Name + " but it is: " + task.State.Name;
+                    /* { 
+                     * PrevState
+                     * CurrentState
+                     * NextState
+                     * TransitionData
+                     * } */
                 }
             }
             return "The History of the task passed the test";
         }
 
+        private void UpdateTaskProperties(Task task, IEnumerable<PropertyInfo> properties, Fields taskHistory)
+        {
+            foreach (var property in properties)
+            {
+                var taskProperty = task.GetType().GetProperty(property.Name);
+                if (taskProperty.Name == "State")
+                {
+                    var stateName = (string) property.GetValue(taskHistory, null);
+                    taskProperty.SetValue(task, States.SingleOrDefault(x => x.Name == stateName));
+                    continue;
+                }
+                taskProperty.SetValue(task, property.GetValue(taskHistory, null));
+            }
+        }
     }
 }

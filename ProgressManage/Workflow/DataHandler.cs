@@ -7,7 +7,7 @@ namespace Workflow
 {
     public class DataHandler
     {
-        public List<Revion> ImportTaskRevisions(string revionsFilePath)
+        public List<Revision> ImportTaskRevisions(string revionsFilePath)
         {
             using(var streamReader = new StreamReader(revionsFilePath))
             {
@@ -23,10 +23,10 @@ namespace Workflow
     public class RevionGroup
     {
         public int Count { get; set; }
-        public List<Revion> Value { get; set; }
+        public List<Revision> Value { get; set; }
     }
 
-    public class Revion
+    public class Revision
     {
         public int Id { get; set; }
         public int Rev { get; set; }

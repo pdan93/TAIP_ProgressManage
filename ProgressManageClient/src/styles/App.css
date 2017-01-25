@@ -1,7 +1,7 @@
 /* Base Application Styles */
 body {
-  color: #fff;
   background: #222;
+  color:#fff;
 }
 
 .index img {
@@ -18,4 +18,16 @@ body {
   border: 1px solid #000;
   border-width: 1px 0;
   background: #666;
+}
+
+nav {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.button {
+  text-decoration: none;
+  margin-right: 10px;
+  background: #fff;
+  padding: 10px;
 }
